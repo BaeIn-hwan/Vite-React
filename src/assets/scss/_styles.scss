@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@import './modules/reset';
+@import './modules/mixin';
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
