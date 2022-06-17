@@ -16,13 +16,14 @@ export default defineConfig((payload: ConfigOptions): object => {
   return {
     plugins: [react()],
     resolve: {
+      extensions: ['.ts', '.tsx', '.js', '.scss'],
       alias: {
         '@' : path.resolve(__dirname, './src'),
       }
     },
     server: {
-      host: env.VITE_HOST,
-      port: env.REACT_APP_PORT
+      // host: env.VITE_APP_HOST,
+      // port: env.VITE_APP_PORT,
     }
   }
 })
