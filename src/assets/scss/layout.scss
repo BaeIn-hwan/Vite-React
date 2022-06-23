@@ -1,0 +1,96 @@
+// Header
+.header {
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 50px;
+  padding: 0 15px;
+  background: #23292d;
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    &__img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .gnb {
+    margin-left: 20px;
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    &__item {
+      margin-left: 10px;
+      font-size: 16px;
+      color: var(--color-white);
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &__link {
+      font-size: 16px;
+      color: var(--color-white);
+    }
+  }
+}
+
+// breadcrumb
+.breadcrumb {
+  padding: 10px;
+  border: 1px solid #000;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      position: relative;
+      margin-left: 10px;
+      padding-left: 12px;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: -5px;
+        width: 6px;
+        height: 6px;
+        border: 1px solid #000;
+        border-bottom: 0;
+        border-left: 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+  }
+}
+
+// footer
+.footer {
+  background: red;
+}

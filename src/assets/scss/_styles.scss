@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
+@import './modules/fonts';
 @import './modules/reset';
 @import './modules/mixin';
+@import './modules/variable';
+@import './layout';
 
 .blind {
   overflow: hidden;

@@ -1,0 +1,13 @@
+:root {
+  --color-white: #fff;
+}
+
+[data-theme='blue'] {
+  --point-color: red;
+  --point-background: blue;
+}
+
+[data-theme='red'] {
+  --point-color: blue;
+  --point-background: red;
+}

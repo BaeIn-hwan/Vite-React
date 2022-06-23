@@ -1,0 +1,30 @@
+{
+  "depth01": [
+    {
+      "name": "faq",
+      "originName": "FAQ"
+    },
+    {
+      "name": "notice",
+      "originName": "공지사항"
+    },
+    {
+      "name": "qna",
+      "originName": "Q&A"
+    }
+  ],
+  "depth02": [
+    {
+      "name": "list",
+      "originName": "리스트"
+    },
+    {
+      "name": "write",
+      "originName": "작성"
+    },
+    {
+      "name": "put",
+      "originName": "수정"
+    }
+  ]
+}

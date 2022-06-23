@@ -1,27 +1,25 @@
 module.exports = {
   extends: [
     'stylelint-order',
-    // 'stylelint-config-standard',
+    'stylelint-config-standard',
     'stylelint-config-standard-scss',
   ],
-  plugins: [
-    'stylelint-scss',
-    'stylelint-order',
-  ],
+  plugins: ['stylelint-scss', 'stylelint-order'],
   rules: {
     'at-rule-empty-line-before': [
       'always',
       {
         except: ['blockless-after-blockless'],
         ignore: ['blockless-after-blockless'],
-        ignoreAtRules: ['include']
-      }
+        ignoreAtRules: ['include', 'else', 'else if'],
+      },
     ],
+    'declaration-block-trailing-semicolon': 'always',
+    'declaration-colon-newline-after': 'always-multi-line',
+    'function-url-quotes': 'never',
     'no-empty-source': true,
-    'order/order': [
-			'custom-properties',
-      'declarations'
-		],
+    'number-leading-zero': ['never'],
+    'order/order': ['custom-properties', 'declarations'],
     'order/properties-order': [
       'content',
       'display',
@@ -43,10 +41,10 @@ module.exports = {
       'bottom',
       'left',
       'float',
-			'width',
+      'width',
       'min-width',
       'max-height',
-			'height',
+      'height',
       'min-height',
       'max-height',
       'margin',
@@ -85,17 +83,24 @@ module.exports = {
       'transform',
       'transition',
       'clip',
-		],
-    'property-no-vendor-prefix': [true, {
-      ignoreProperties: ['text-size-adjust', 'appearance', 'display']
-    }],
+    ],
+    'property-no-vendor-prefix': [
+      true,
+      {
+        ignoreProperties: ['text-size-adjust', 'appearance', 'display'],
+      },
+    ],
+    'scss/at-if-closing-brace-newline-after': 'always-last-in-chain',
+    'scss/at-if-closing-brace-space-after': 'always-intermediate',
     'selector-class-pattern': '^[a-zA-Z]',
     'selector-class-pattern': '^[a-zA-Z]',
     'string-quotes': 'single',
+    'value-list-comma-newline-after': 'always-multi-line',
     'value-no-vendor-prefix': [
-      true, {
-        ignoreValues: ['box', 'text-size-adjust']
-      }
+      true,
+      {
+        ignoreValues: ['sticky', 'box', 'text-size-adjust'],
+      },
     ],
-  }
-}
+  },
+};
