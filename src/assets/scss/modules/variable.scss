@@ -1,13 +1,17 @@
+/*
+  rules
+  1. 시작은 --로 시작
+  2. 대문자는 사용 X
+*/
+
 :root {
-  --color-white: #fff;
-}
+  // common
+  --text-default-color: #000;
 
-[data-theme='blue'] {
-  --point-color: red;
-  --point-background: blue;
-}
+  // header color
+  --header-bg: #fff;
 
-[data-theme='red'] {
-  --point-color: blue;
-  --point-background: red;
+  // aside color
+  --aside-bg: #23292d;
+  --aside-gnb-active: #06577f;
 }

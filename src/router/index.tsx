@@ -1,8 +1,9 @@
 import { useRoutes } from 'react-router-dom';
 
-import Main from '@/pages/main/Main';
-import List from '@/pages/board/List';
-import Write from '@/pages/board/Write';
+import Main from '@/pages/main';
+
+import SampleForm from '@/pages/sample/form';
+import SampleLayouts from '@/pages/sample/layouts';
 
 const Router = () => {
   return useRoutes([
@@ -11,12 +12,12 @@ const Router = () => {
       element: <Main />,
     },
     {
-      path: '/:boardType/list',
-      element: <List />,
+      path: '/sample/form',
+      element: <SampleForm />,
     },
     {
-      path: '/:boardType/write',
-      element: <Write />,
+      path: '/sample/layouts',
+      element: <SampleLayouts />,
     },
   ]);
 };

@@ -1,0 +1,148 @@
+{
+  "gnb": [
+    {
+      "depth": 1,
+      "title": "시스템",
+      "link": "",
+      "subDepth": [
+        {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "depth": 1,
+      "title": "시스템",
+      "link": "",
+      "subDepth": [
+        {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "depth": 1,
+      "title": "시스템",
+      "link": "",
+      "subDepth": [
+        {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "depth": 1,
+      "title": "시스템",
+      "link": "",
+      "subDepth": [
+        {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "depth": 1,
+      "title": "시스템",
+      "link": "",
+      "subDepth": [
+        {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "depth": 1,
+      "title": "시스템",
+      "link": "",
+      "subDepth": [
+        {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }, {
+          "depth": 2,
+          "title": "부서",
+          "link": ""
+        }
+      ]
+    }
+  ]
+}

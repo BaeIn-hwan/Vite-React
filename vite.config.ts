@@ -12,10 +12,10 @@ export default defineConfig((payload: ConfigOptions): object => {
   // 세 번째 매개변수를 ''로 설정하면 `VITE_` 접두사에 관계없이 모든 환경 변수를 불러옴
   const env = loadEnv(mode, process.cwd(), '');
   console.log('env', env);
-  console.log('process', process.cwd());
 
   return {
     plugins: [react()],
+    assetsInclude: ['*/src'],
     resolve: {
       extensions: ['.css', '.scss', '.ts', '.tsx', '.js', '.json'],
       alias: {

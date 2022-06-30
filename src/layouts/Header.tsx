@@ -1,46 +1,54 @@
+//#region import
+import { getImageUrl } from '@/composables/common';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '@/assets/images/common/ico_header_logo.svg';
+
+import Aside from '@/layouts/aside';
+
+import gnb from '@/json/gnb.json';
+//#endregion import
+
+interface SubDepth {
+  depth: number | string;
+  title: string;
+  link: string;
+}
+
+interface Gnb {
+  depth: number | string;
+  title: string;
+  link: string;
+  subDepth?: SubDepth[];
+}
 
 const Header = () => {
-  const gnbList: { id: number; title: string; link: string }[] = [
-    {
-      id: 1,
-      title: '게시판01',
-      link: '/notice/list',
-    },
-    {
-      id: 2,
-      title: '게시판02',
-      link: '/faq/list',
-    },
-    {
-      id: 3,
-      title: '게시판03',
-      link: '/qna/list',
-    },
-  ];
+  const [gnbList, setGnbList] = useState<Gnb[] | []>([]);
+
+  useEffect(() => {
+    setGnbList(gnb.gnb);
+  }, []);
 
   return (
     <header id="header" className="header">
-      <h1 className="logo">
-        <Link to="/" className="logo__link">
-          <img src={logo} alt="" className="logo__img" />
-        </Link>
-      </h1>
+      <div className="header__inner">
+        <h1 className="header__logo">
+          <Link to="/" className="header__logo-link">
+            LOGO
+          </Link>
+        </h1>
 
-      <nav className="gnb">
-        <h2 className="blind">GNB</h2>
+        <nav className="util">
+          <h2 className="blind">Util Menu</h2>
 
-        <ul className="gnb__list">
-          {gnbList.map((list, index) => (
-            <li className="gnb__item" key={index}>
-              <Link to={list.link} className="gnb__link">
-                {list.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+          <ul className="util__list">
+            <li className="util__item">OOO님</li>
+            <li className="util__item">Logout</li>
+          </ul>
+        </nav>
+      </div>
+
+      {/* aside */}
+      <Aside />
     </header>
   );
 };
